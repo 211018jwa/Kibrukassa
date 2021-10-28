@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator App</title> 
+    </head>
+    <body> <!-- This is where the bulk of the content goes on your webpage -->
+        <form action="http://localhost:8080/add" method="POST" target="result"> 
+
+            <input type="number" id= "AddNum1" step="0.01" name="number1" placeholder="0">
+            <input type="number" id= "AddNum2" step="0.01" name="number2" placeholder="0">
+            <button type="submit" id= "AddBtn"> Add Numbers</button>
+        </form>
+        <iframe name="result" frameborder = "0"></iframe>
+<!-- This is where the subtraction goes -->
+        <form action="http://localhost:8080/subtract" method="POST" target="difference"> 
+
+            <input type="number" id = "SubNum1" step="0.01" name="number1" placeholder="0">
+            <input type="number" id = "SubNum2"step="0.01" name="number2" placeholder="0">
+            <button type="submit"id = "SubBtn"> Subtract Numbers</button>
+        </form>
+        <iframe name="difference" frameborder = "0"></iframe>
+<!-- This is where the multiplication goes -->
+        <form action="http://localhost:8080/multiply" method="POST" target="multiply"> 
+
+            <input type="number" id = "MulNum1" step="0.01" name="number1" placeholder="0">
+            <input type="number" id = "MulNum2" step="0.01" name="number2" placeholder="0">
+            <button type="submit" id = "MulBtn"> Multiply Numbers</button>
+        </form>
+        <iframe name="multiply" frameborder = "0"></iframe>
+<!-- This is where the division goes -->
+        <form action="http://localhost:8080/divide" method="POST" target="divide"> 
+
+            <input type="number" id = "DivNum1" step="0.01" name="number1" placeholder="0">
+            <input type="number" id = "DivNum2" step="0.01" name="number2" placeholder="0">
+            <button type="submit" id = "DIVBtn">Divide Numbers</button>
+        </form>
+        <iframe name="divide" frameborder = "0"></iframe>
+
+    </body>
+</html>
